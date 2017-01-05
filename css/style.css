@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body {
+	background: #f4f4f4;
+}
 
 .row {
 	max-width: 960px;
