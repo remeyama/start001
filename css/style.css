@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 body {
+<<<<<<< HEAD
 	background: #fff9df;
+=======
+	background: #eee;
+>>>>>>> ver02
 }
 
 .row {
