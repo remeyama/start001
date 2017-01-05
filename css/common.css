@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* 基本設定
+------------------------------------------------------------ */
+
+html {
+	/*overflow-y: scroll;*/
+	font-size: 62.5%;
+}
+
+body {
+	color: #333;
+	font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+	font-weight: 500;
+	line-height: 1.8;
+	-webkit-text-size-adjust: none;
+}
+
+.serif {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+.sp_view {
+	display: none !important;
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		font-weight: normal;
+	}
+	.pc_view {
+		display: none !important;
+	}
+	.sp_view {
+		display: block !important;
+	}
+}
+
+#wrap {
+	font-size: 14px;
+	font-size: 1.4rem;
+	position: relative;
+}
+
+::-moz-selection {
+	background-color: #585858;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background-color: #585858;
+	color: #fff;
+	text-shadow: none;
+}
+
+/* リンク設定
+------------------------------------------------------------ */
+
+a {
+	text-decoration: none;
+	color: #06c;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a:hover img {
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}
+
+/* ボタン
+------------------------------------------------------------ */
+
+.btn {
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+}
+.btn a {
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #fff!important;
+	display: block;
+	border-radius: 5px;
+	background-color: #06c;
+	box-shadow: 0 4px 0 #004f9f;
+}
+.btn a:hover {
+	opacity: 0.8;
+	text-decoration: none;
+}
+.btn a:active {
+	text-decoration: none;
+	box-shadow: none;
+	transform: translate3d(0, 4px, 0);
+}
+
+.btn .btn_black {
+	background-color: #3e3e3e;
+	box-shadow: 0 4px 0 #000000;
+}
+.btn .btn_green {
+	background-color: #009606;
+	box-shadow: 0 4px 0 #006c04;
+}
+
+.btn.size_s {
+	width: 100px;
+}
+.btn.size_l {
+	width: 200px;
+}
+.btn.size_xl {
+	width: 300px;
+}
+.btn.size_max {
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	.btn {
+		text-align: center;
+		width: 60%;
+	}
+	.btn.size_s {
+		width: 40%;
+	}
+	.btn.size_l {
+		width: 80%;
+	}
+	.btn.size_xl {
+		width: 100%;
+	}
+}
+
